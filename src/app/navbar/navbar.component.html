@@ -1,0 +1,17 @@
+<ul [className]="bars?'menu menuactive':'menu'">
+	<li class="logo"><a href="#"><span class="material-symbols-outlined">
+		flightsmode
+		</span>Arauz-Air</a></li>
+  <li class="Menu-icono" (click)="MenuClick()">
+	<a href="#">
+		<span [className]="'material-symbols-outlined'" aria-hidden="true">
+		{{bars? "Close":"Menu"}} </span>
+		
+	</a>
+</li>
+	<li [className]="bars?'active':'items'"> <a href="#">Donaciones</a>  </li>
+	<li [className]="bars?'active':'items'"> <a href="#">Servicios</a> </li>
+	<li [className]="bars?'active':'items'"> <a href="#">Nosotros</a> </li>
+	<li [className]="bars?'active':'items'"> <a href="#">Productos</a> </li>
+	<li [className]="bars?'active btn':'items btn'" class=""> <a href="#">Contacto</a> </li>
+</ul>

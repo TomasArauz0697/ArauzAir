@@ -1,0 +1,99 @@
+:root {
+    --grey: rgb(131, 131, 131);
+    --blanco: rgb(255, 255, 255);
+    --blanco: rgb(255, 255, 255);
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    position: fixed;
+    width: 100%;
+  }
+  .logo {
+    flex: 1;
+    order: 0;
+  }
+  .Menu-icono {
+    order: 1;
+    display: none;
+  }
+  .items {
+    order: 2;
+  }
+  
+  .logo,
+  .items,
+  .Menu-icono,
+  .active {
+    list-style: none;
+    padding: 10px 10px;
+  }
+  
+  .items a,
+  .logo a,
+  .active {
+    text-decoration: none;
+    color: var(--grey);
+  }
+  .logo a {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .items:not(.btn) a:hover {
+    color: rgb(233, 143, 69);
+  }
+  
+  .btn a {
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: rgb(233, 143, 69);
+    border: 1.5px solid rgb(233, 143, 69);
+    background-color: rgb(255, 255, 255);
+  }
+  .btn :hover {
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: rgb(233, 164, 16);
+    border: 1.5px solid rgb(233, 164, 16);
+  
+    -webkit-transition: background-color 1000ms ease-in-out;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms ease-in;
+  }
+  
+  .fa-plane-departure {
+    color: rgb(233, 143, 69);
+  }
+  
+  /*Resposive Design 450px*/
+  
+  @media screen and (max-width: 680px) {
+    .menuactive {
+      height: 100vh;
+      width: 100vw;
+      transition: all 0.6s ease-out;
+    }
+    .Menu-icono {
+      order: 1;
+      display: inline-flex;
+    }
+    .items {
+      display: none;
+    }
+  
+    .active {
+      display: block;
+      width: 100%;
+      text-align: center;
+      order: 2;
+    }
+    .active a {
+      text-decoration: none;
+      color: var(--grey);
+    }
+  }
+  

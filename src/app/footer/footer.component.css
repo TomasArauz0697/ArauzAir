@@ -1,0 +1,25 @@
+/*Footer*/
+
+    
+.footer{
+    background: black;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    height: 100px;
+ 
+}
+/*.textos-footer{
+    grid-column: 1/-1;   border: 1px solid rgb(221, 196, 196);
+}*/
+
+[class^="footer-items"]{
+ /*  border: 1px solid red;*/
+   grid-column: span 3 ; 
+}
+
+[class^="footer-items"] a{
+    color: #ffffff;  
+    font-size: 25px;
+    text-decoration: none;
+  }
